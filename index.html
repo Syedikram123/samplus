@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>XYCA Garments</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+    body{background:#000;color:#fff;overflow-x:hidden;}
+    video.bg{position:fixed;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:-1;opacity:.18;}
+    header{width:100%;padding:18px 24px;display:flex;align-items:center;justify-content:space-between;background:rgba(0,0,0,0.55);backdrop-filter:blur(6px);position:sticky;top:0;z-index:10;}
+    header .left{display:flex;align-items:center;gap:12px;}
+    header img{height:48px;width:auto;}
+    h1{font-size:26px;font-weight:700;letter-spacing:1px;}
+    h1 span{color:#e50914;}
+    nav a{margin-left:22px;color:#fff;text-decoration:none;font-weight:500;font-size:15px;transition:.3s;}
+    nav a:hover{color:#e50914;}
+    .hero{width:100%;padding:80px 20px;text-align:center;max-width:1200px;margin:auto;}
+    .hero h2{font-size:40px;font-weight:700;margin-bottom:12px;}
+    .hero p{font-size:16px;color:#ddd;margin-bottom:25px;}
+    .brands{display:flex;flex-wrap:wrap;justify-content:center;gap:28px;padding:40px 10px;}
+    .brands img{height:75px;filter:brightness(0) invert(1);opacity:.85;transition:.25s;}
+    .brands img:hover{opacity:1;transform:scale(1.1);}
+    .section-title{text-align:center;font-size:26px;margin:40px 0 15px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#e50914;}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px;max-width:1200px;margin:0 auto 40px;padding:0 14px;}
+    .grid img{width:100%;height:270px;border-radius:12px;object-fit:cover;transition:.35s;}
+    .grid img:hover{transform:scale(1.05);}
+    .cta{display:flex;flex-wrap:wrap;justify-content:center;gap:18px;margin:50px auto;}
+    .cta a{padding:14px 25px;background:#e50914;color:#fff;border-radius:12px;font-size:16px;text-decoration:none;font-weight:600;transition:.3s;}
+    .cta a:hover{opacity:.8;}
+    footer{text-align:center;padding:28px 10px;color:#999;font-size:14px;margin-top:50px;border-top:1px solid #222;}
+    @media(max-width:600px){
+      header img{height:40px;}
+      h1{font-size:20px;}
+      .hero h2{font-size:28px;}
+      .grid img{height:220px;}
+    }
+  </style>
+</head>
+<body>
+  <video autoplay loop muted playsinline class="bg"><source src="assets/bg.mp4" type="video/mp4" /></video>
+  <header>
+    <div class="left">
+      <img src="assets/pic1.png" alt="XYCA" />
+      <h1>XYCA <span>Garments</span></h1>
+    </div>
+    <nav>
+      <a href="#brands">Brands</a>
+      <a href="#collection">Collection</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Your Destination For <span style="color:#e50914">Modern Style</span></h2>
+    <p>Premium Quality • Authentic Brands • Latest Fashion Trends</p>
+  </section>
+
+  <section id="brands" class="brands">
+    <img src="assets/pic2.png" alt="Van Heusen" />
+    <img src="assets/pic3.png" alt="Louis Philippe" />
+    <img src="assets/pic4.png" alt="Allen Solly" />
+    <img src="assets/pic5.png" alt="Jockey" />
+  </section>
+
+  <h3 class="section-title">Van Heusen</h3>
+  <div class="grid">
+    <img src="assets/pic6.png" />
+    <img src="assets/pic7.png" />
+    <img src="assets/pic8.png" />
+    <img src="assets/pic9.png" />
+    <img src="assets/pic10.png" />
+  </div>
+
+  <h3 class="section-title">Louis Philippe</h3>
+  <div class="grid">
+    <img src="assets/pic11.png" />
+    <img src="assets/pic12.png" />
+    <img src="assets/pic13.png" />
+    <img src="assets/pic14.png" />
+    <img src="assets/pic15.png" />
+  </div>
+
+  <h3 class="section-title">Allen Solly</h3>
+  <div class="grid">
+    <img src="assets/pic16.png" />
+    <img src="assets/pic17.png" />
+    <img src="assets/pic18.png" />
+    <img src="assets/pic19.png" />
+    <img src="assets/pic20.png" />
+  </div>
+
+  <h3 class="section-title">Jockey</h3>
+  <div class="grid">
+    <img src="assets/pic21.png" />
+    <img src="assets/pic22.png" />
+    <img src="assets/pic23.png" />
+    <img src="assets/pic24.png" />
+    <img src="assets/pic25.png" />
+  </div>
+
+  <section id="contact" class="cta">
+    <a href="https://maps.app.goo.gl/LXyrwAfmAcn3VXea6" target="_blank">Location</a>
+    <a href="tel:9071311906">Call Us</a>
+    <a href="https://wa.me/919071311906" target="_blank">WhatsApp</a>
+    <a href="https://www.instagram.com/xycagarments/" target="_blank">Instagram</a>
+  </section>
+
+  <footer>© 2025 XYCA Garments — xyca.in</footer>
+</body>
+</html>
