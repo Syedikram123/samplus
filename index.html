@@ -19,7 +19,7 @@
     .hero{width:100%;padding:20px 20px;text-align:center;max-width:1200px;margin:auto;padding-bottom: 5px !important;}
     .hero h2{font-size:40px;font-weight:700;margin-bottom:12px;}
     .hero p{font-size:16px;color:#ddd;margin-bottom:25px;}
-    .brands{display:flex;flex-wrap:wrap;justify-content:center;gap:28px;padding:40px 10px;}
+    .brands{display:flex;flex-wrap:wrap;justify-content:center;gap:28px;padding:10px 10px;}
     .brands img {
       height: clamp(60px, 10vw, 90px);  /* ✅ grows as screen shrinks */
       filter:brightness(0) invert(1);
@@ -35,7 +35,7 @@
       place-items: center;
     }
   }
-    .section-title{text-align:center;font-size:26px;margin:40px 0 15px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#e50914;}
+    .section-title{text-align:center;font-size:26px;margin:10px 0 15px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#e50914;}
     .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px;max-width:1200px;margin:0 auto 40px;padding:0 14px;}
     .grid img{width:100%;height:270px;border-radius:12px;object-fit:cover;transition:.35s;}
     .grid img:hover{transform:scale(1.05);}
@@ -124,7 +124,11 @@
     section {
       scroll-margin-top: 85px;
     }
+	#brands {
+		scroll-margin-top: 85px;
+	}
   </style>
+
 </head>
 <body>
   <video autoplay loop muted playsinline class="bg"><source src="assets/bg.mp4" type="video/mp4" /></video>
@@ -157,7 +161,7 @@
 
   <section class="hero">
     <h2>Your Destination For <span style="color:#e50914">Modern Style</span></h2>
-    <p>Premium Quality • Authentic Brands • Latest Fashion Trends</p>
+	<p>Stay updated with our latest arrivals..! Follow us on Instagram and explore our page for more<p>
   </section>
 
 <section id="contact" class="cta">
@@ -166,23 +170,26 @@
     <a href="https://wa.me/919071311906" target="_blank">WhatsApp</a>
     <a href="https://www.instagram.com/xycagarments/" target="_blank">Instagram</a>
   </section>
-  <p class="center-text">PREFERRED BRAND STORE</p>
+  
+   <section class="hero">
+    <h2>PREFERRED <span style="color:#e50914">BRAND STORE</span></h2>
+  </section>
+  
   <!-- <p>PREFERRED BRAND STORE</p> -->
-  <section id="brands" class="brands">
+  <section class="brands">
     <img src="assets/pic2.png" alt="Van Heusen" />
     <img src="assets/pic3.png" alt="Louis Philippe" />
     <img src="assets/pic4.png" alt="Allen Solly" />
     <img src="assets/pic5.png" alt="Jockey" />
   </section>
 
-  <h3 class="section-title">Van Heusen</h3>
+  <h3 id="brands" class="section-title">Van Heusen</h3>
   <div class="grid">
     <img src="assets/pic6.png" />
     <img src="assets/pic7.png" />
     <img src="assets/pic8.png" />
     <img src="assets/pic9.png" />
-    <img src="assets/pic10.png" />
-  </div>
+	</div>
 
   <h3 class="section-title">Louis Philippe</h3>
   <div class="grid">
@@ -190,7 +197,6 @@
     <img src="assets/pic12.png" />
     <img src="assets/pic13.png" />
     <img src="assets/pic14.png" />
-    <img src="assets/pic15.png" />
   </div>
 
   <h3 class="section-title">Allen Solly</h3>
@@ -199,7 +205,6 @@
     <img src="assets/pic17.png" />
     <img src="assets/pic18.png" />
     <img src="assets/pic19.png" />
-    <img src="assets/pic20.png" />
   </div>
 
   <h3 class="section-title">Jockey</h3>
@@ -208,10 +213,28 @@
     <img src="assets/pic22.png" />
     <img src="assets/pic23.png" />
     <img src="assets/pic24.png" />
-    <img src="assets/pic25.png" />
   </div>
 
+ <section class="hero">
+    <h2>WE <span style="color:#e50914">DELIVER</span></h2>
+	<p>★ New Arrivals • Latest Collections ★<p>
+    <p>★ Exclusive Offers ★<p>
+	<p>Thank You for Shopping With Us ! <p>
+
+  </section>
 
   <footer>© 2025 XYCA Garments — xyca.in</footer>
+  
+  <script>
+  const toggle = document.getElementById("menu-toggle");
+  const links = document.querySelectorAll(".nav-links a");
+
+  links.forEach(link => {
+    link.addEventListener("click", () => {
+      toggle.checked = false; // AUTO CLOSE MENU
+    });
+  });
+</script>
+
 </body>
 </html>
